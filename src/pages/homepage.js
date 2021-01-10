@@ -1,15 +1,19 @@
 import React, {useEffect, useState} from "react";
-import {Link} from "react-router-dom";
 import {Button, Navbar, Image, Container, Grid, Col, Row, Card, Collapse, CardDeck} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import testImg from "./assets/2cool.jpg"
 import './style.css';
+import {Document, Page, pdfjs} from 'react-pdf';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 //import Projects from './projects';
 
 //const [open, setOpen] = useState(false);
 
 const Homepage = () => {
-    const [open, setOpen] = useState(false);
+    const [openProjects, setOpenProjects] = useState(false);
+    const [openResume, setOpenResume] = useState(false);
+    const [numPages, setNumPages] = useState(1);
+    
     return (
         <div style={{width:'100%', margin: 'auto'}}>
             <Container className = "homepageContainer">
@@ -38,11 +42,13 @@ const Homepage = () => {
                         </Navbar>
                         <Navbar>
                             <div className = "site-links">
-                                <Button variant = "link" size = "lg" onClick={() => setOpen(false)}>Resume</Button>
-                                <Button variant = "link" size = "lg" onClick={() => setOpen(!open)}>Projects</Button>
+                                <Button variant = "link" size = "lg" onClick={() => {setOpenProjects(false);
+                                                                                     setOpenResume(!openResume)}}>Resume</Button>
+                                <Button variant = "link" size = "lg" onClick={() => {setOpenResume(false);
+                                                                                    setOpenProjects(!openProjects)}}>Projects</Button>
                             </div>
                         </Navbar>
-                        <Collapse in={open}>
+                        <Collapse in={openProjects}>
                             <CardDeck>
                                 <Card style = {{width: '18rem'}}>
                                     <Card.Body>
@@ -61,6 +67,11 @@ const Homepage = () => {
                                     </Card.Body>
                                 </Card>
                             </CardDeck>
+                        </Collapse>
+                        <Collapse in={openResume}>
+                            <Document file = "assets/resume_cs.pdf" onLoadError={console.error}>
+                                <Page pageNumber={numPages}/>
+                            </Document>
                         </Collapse>
                     </Col>
                 </Row>
