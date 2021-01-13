@@ -1,6 +1,6 @@
 .testImg{
-    width: 300px;
-    height: 300px;
+    width: 296px;
+    height: 278px;
     position: relative;
     /*left: -2%;*/
 }
@@ -25,9 +25,10 @@
 
 .social-links{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    width: 20%;
+    /*width: 20%;*/
 }
 
 .social-links i{
@@ -37,7 +38,97 @@
 
 .site-links{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    width: 20%;
+    /*width: 20%;*/
+}
+
+.resume-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-links i{
+    color: black;
+    font-size: 2em;
+}
+
+.project-links i:hover{
+    color:rgba(0, 0, 0, 0.5);
+}
+
+.project-body{ /* For cards with one line of desc. text */
+    margin-bottom: 24px;
+}
+
+.img-card-container{
+    position: relative;
+}
+
+.img-card-overlay{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+    background-color:rgb(7, 125, 194);
+    opacity: 0;
+    height: auto;
+    width: 100%;
+    backface-visibility: hidden;
+    cursor: pointer;
+}
+
+.img-card-overlay-text{
+    color: white;
+    position: absolute;
+    top: 48%;
+    left: 31%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.img-card-img{
+    width: 100%;
+    height: 270px;
+    object-fit:cover;
+}
+
+.img-card-container:hover .img-card-overlay{
+    opacity:0.7;
+}
+
+.modal-img{
+    width: 100%;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.modal-img-rr-div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.modal-img-rr{
+    width: 40%;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.projects-card-deck{
+    /*max-width: 100%;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: .5rem;
+}
+
+.projects-card{
+    /*width: '40rem';*/
+    display: inline-block;
 }
