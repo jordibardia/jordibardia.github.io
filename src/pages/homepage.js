@@ -187,8 +187,6 @@ const Homepage = () => {
                                 <h4>Planned Features</h4>
                                 Features currently being worked on or will be worked on are:
                                 <br/>
-                                - Body generation based on sex
-                                <br/>
                                 - Cosmetic additions (hats, clothes, etc.)
                                 <br/>
                                 - Saving full combined model
