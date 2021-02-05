@@ -152,7 +152,7 @@ const Homepage = () => {
                         </Collapse>
                         <Collapse in={openResume} timeout = {switchContent('resume')}>
                             <div className="resume-div">
-                                <Document file = "resume_cs_1_website.pdf" onLoadError={console.error}>
+                                <Document file = "resume_cs_2_website.pdf" onLoadError={console.error}>
                                     <Page pageNumber={numPages} scale = {2.0} renderTextLayer = {false} className="testing-page"/>
                                 </Document>
                             </div>
