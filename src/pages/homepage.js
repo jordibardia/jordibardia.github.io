@@ -68,7 +68,7 @@ const Homepage = () => {
                         </Collapse>
                         <Collapse in={openResume} timeout = {switchContent('resume')}>
                             <div className="resume-div">
-                                <iframe src = {Resume} className = "resume-iframe"/>
+                                <iframe src = "https://drive.google.com/file/d/1kPk8DhYLHLOaC02RNFwYDR9buORXdEMs/preview" width = "640" height = "480" className = "resume-iframe"/>
                             </div>
                         </Collapse>
                     </Col>
