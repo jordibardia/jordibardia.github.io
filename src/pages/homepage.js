@@ -37,7 +37,7 @@ const Homepage = () => {
                 <Row>
                     <Col>
                         <h1 className = "container_name">Jordi Bardia</h1>
-                        <Image src="profile_pic.JPG" className = "testImg" roundedCircle/>
+                        <Image src="profile_pic.JPG" className = "profileImg" roundedCircle/>
                         <Navbar>
                             <div className="social-links">
                                 <a href="tel:3058511273" rel = "noopener noreferrer" target="_blank">

@@ -1,3 +1,9 @@
+.profileImg{
+    width: 296px;
+    height: 278px;
+    position: relative;
+}
+
 .homepageContainer{
     padding-top: 80px;
     /*left: 40%;
