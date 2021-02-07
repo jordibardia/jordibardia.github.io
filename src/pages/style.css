@@ -18,11 +18,6 @@
     height: 100%;
 }
 
-.container_name{
-    /*position: relative;
-    left: 2%;*/
-}
-
 .social-links{
     display: flex;
     justify-content: center;
@@ -32,8 +27,12 @@
 }
 
 .social-links i{
-    color: black;
+    color: rgb(15, 15, 15);
     font-size: 3em;
+}
+
+.social-links i:hover{
+    color: rgb(50,50,50);
 }
 
 .site-links{
@@ -48,6 +47,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.resume-iframe{
+    width: 90%;
+    height: 900px;
+    margin-bottom: 50px;
 }
 
 .project-links i{
@@ -86,9 +91,9 @@
 
 .img-card-overlay-text{
     color: white;
-    position: absolute;
+    position: relative;
     top: 48%;
-    left: 31%;
+    /*left: 31%;*/
     text-align: center;
     font-size: 25px;
 }
