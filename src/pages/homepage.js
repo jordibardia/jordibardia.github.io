@@ -40,11 +40,11 @@ const Homepage = () => {
                         <Image src="profile_pic.JPG" className = "profileImg" roundedCircle/>
                         <Navbar>
                             <div className="social-links">
-                                <a href="tel:3058511273" rel = "noopener noreferrer" target="_blank">
+                                <a href="tel:7862122520" rel = "noopener noreferrer" target="_blank">
                                     <i className="fa fa-phone-square" aria-hidden="true"/>
                                 </a>
 
-                                <a href="mailto:jbardia@ufl.edu" rel = "noopener noreferrer" target="_blank">
+                                <a href="mailto:jordi.bardia@gmail.com" rel = "noopener noreferrer" target="_blank">
                                     <i className="fa fa-envelope-square" aria-hidden="true"/>
                                 </a>
 
@@ -68,7 +68,7 @@ const Homepage = () => {
                         </Collapse>
                         <Collapse in={openResume} timeout = {switchContent('resume')}>
                             <div className="resume-div">
-                                <iframe src = "https://drive.google.com/file/d/1kPk8DhYLHLOaC02RNFwYDR9buORXdEMs/preview" width = "640" height = "480" className = "resume-iframe"/>
+                                <iframe src = "https://drive.google.com/file/d/1aq2rJm62fyxApQymHJfPUugdwAsEthmA/preview" width = "640" height = "480" className = "resume-iframe"/>
                             </div>
                         </Collapse>
                     </Col>
