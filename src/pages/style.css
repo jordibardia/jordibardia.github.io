@@ -134,6 +134,14 @@
     display: inline-block;
 }
 
+.experience-card{
+    flex-direction: row;
+}
+
+.experience-card-img{
+    width: 30%;
+}
+
 @media only screen and (max-width: 768px) {
     .resume-iframe{
         height: 480px;

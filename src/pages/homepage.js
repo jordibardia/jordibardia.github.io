@@ -1,5 +1,5 @@
 import Projects from './projects';
-import Resume from './assets/resume_cs_2.pdf';
+import Experience from './experience';
 import React, {useEffect, useState} from "react";
 import {Button, Navbar, Image, Container, Col, Row, Card, Collapse, CardDeck, ListGroup, ListGroupItem, Modal} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -7,6 +7,7 @@ import './style.css';
 
 const Homepage = () => {
     const [openProjects, setOpenProjects] = useState(false);
+    const [openExperience, setOpenExperience] = useState(false);
     const [openResume, setOpenResume] = useState(false);
     //const [openAvatarModal, setOpenAvatarModal] = useState(false);
     //const [openRRModal, setOpenRRModal] = useState(false);
@@ -21,6 +22,13 @@ const Homepage = () => {
                     }
                     return 300;
                 }
+            case 'experience':
+                {
+                    if (openExperience){
+                        return 0;
+                    }
+                    return 300;
+                }
             case 'resume':
                 {
                     if (openProjects){
@@ -28,6 +36,8 @@ const Homepage = () => {
                     }
                     return 300;
                 }
+            default:
+                return 0;
         }
     }
 
@@ -56,14 +66,24 @@ const Homepage = () => {
                         <Navbar>
                             <div className = "site-links">
                                 <Button variant = "link" size = "lg" onClick={() => {setOpenProjects(false);
+                                                                                    setOpenExperience(false);
                                                                                     setOpenResume(!openResume)}}>Resume</Button>
+                                <Button variant = "link" size = "lg" onClick={() => {setOpenProjects(false);
+                                                                                    setOpenExperience(!openExperience);
+                                                                                    setOpenResume(false);}}>Experience</Button>
                                 <Button variant = "link" size = "lg" onClick={() => {setOpenProjects(!openProjects);
-                                                                                     setOpenResume(false);}}>Projects</Button>
+                                                                                    setOpenExperience(false);
+                                                                                    setOpenResume(false);}}>Projects</Button>
                             </div>
                         </Navbar>
                         <Collapse in={openProjects} timeout = {switchContent('projects')}>
                             <div>
                                 <Projects/>
+                            </div>
+                        </Collapse>
+                        <Collapse in={openExperience} timeout = {switchContent('experience')}>
+                            <div>
+                                <Experience/>
                             </div>
                         </Collapse>
                         <Collapse in={openResume} timeout = {switchContent('resume')}>
