@@ -12,7 +12,7 @@ const Homepage = () => {
                 <Row>
                     <Col>
                         <h1 className = "container_name">Jordi Bardia</h1>
-                        <Image src="profile_pic.JPG" className = "profileImg" roundedCircle/>
+                        <Image src="profile_pic1.JPG" className = "profileImg" roundedCircle/>
                         <Navbar>
                             <div className="social-links">
                                 <a href="tel:7862122520" rel = "noopener noreferrer" target="_blank">
