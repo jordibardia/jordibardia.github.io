@@ -6,15 +6,36 @@ const Experience = () => {
     return(
         <Fragment>
             <Card className="experience-card">
+                <Card.Img src = "ironsoftware.png" className="experience-card-img"/>
+                <Card.Body>
+                    <Card.Title>Iron Software</Card.Title>
+                    <Card.Text><i>Software Engineer</i></Card.Text>
+                    <Card.Text>
+                        Here I work on developing C# libraries (some with a C++ base) that are
+                        used by thousands of software engineers. I primarily work on API design,
+                        bug fixing, and building testing pipelines. I've also interacted with customers
+                        to help them understand and troubleshoot the company's products.
+                    </Card.Text>
+                    <Card.Text>
+                        <b>Technologies/Languages:</b>
+                            <br/>
+                            C#, C++, Azure
+                    </Card.Text>
+                    <Card.Text>
+                        <b><i>June 2023 - Present</i></b>
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+            <br/>
+            <Card className="experience-card">
                 <Card.Img src="smilelab.png" className="experience-card-img"/>
                 <Card.Body>
                     <Card.Title>SMILE Lab</Card.Title>
                     <Card.Text><i>Research Assistant</i></Card.Text>
                     <Card.Text>
-                        I'm conducting research at the Smart Medical Informatics Learning and Evaluation Lab at the
-                        University of Florida, under Dr. Ruogu Fang. I currently work on two projects: one related to the integration of
-                        neuroscience theory into machine learning models for emotion perception from images and another in classifying medical
-                        images for aiding in surgery.
+                        I conducted research at the Smart Medical Informatics Learning and Evaluation Lab at the
+                        University of Florida, under Dr. Ruogu Fang. I worked on projects related to medical image analysis
+                        and image sentiment recognition.
                     </Card.Text>
                     <Card.Text>
                         <b>Technologies/Languages:</b>
@@ -22,7 +43,7 @@ const Experience = () => {
                             Python, PyTorch, Git, Linux
                     </Card.Text>
                     <Card.Text>
-                        <b><i>December 2021 - Present</i></b>
+                        <b><i>December 2021 - April 2023</i></b>
                     </Card.Text>
                 </Card.Body>
             </Card>
