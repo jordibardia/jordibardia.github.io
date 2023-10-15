@@ -15,10 +15,6 @@ const Homepage = () => {
                         <Image src="profile_pic1.jpg" className = "profileImg" roundedCircle/>
                         <Navbar>
                             <div className="social-links">
-                                <a href="tel:7862122520" rel = "noopener noreferrer" target="_blank">
-                                    <i className="fa fa-phone-square" aria-hidden="true"/>
-                                </a>
-
                                 <a href="mailto:jordi.bardia@gmail.com" rel = "noopener noreferrer" target="_blank">
                                     <i className="fa fa-envelope-square" aria-hidden="true"/>
                                 </a>
