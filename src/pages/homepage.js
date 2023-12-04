@@ -27,7 +27,7 @@ const Homepage = () => {
                         <Tabs defaultActiveKey="resume" className="mb-3" justify={true}>
                             <Tab eventKey="resume" title="Resume">
                                 <div className="resume-div">
-                                    <iframe src = "https://drive.google.com/file/d/1aq2rJm62fyxApQymHJfPUugdwAsEthmA/preview" width = "640" height = "480" className = "resume-iframe"/>
+                                    <iframe src = "https://drive.google.com/file/d/1P_VLn8oFgjhFAcbIcP2ATmZcbuQinbfg/preview" width = "640" height = "480" className = "resume-iframe"/>
                                 </div>
                             </Tab>
                             <Tab eventKey="experience" title="Experience">
