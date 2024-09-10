@@ -12,9 +12,9 @@ const Experience = () => {
                     <Card.Text><i>Software Engineer</i></Card.Text>
                     <Card.Text>
                         Here I work on developing C# libraries (some with a C++ base) that are
-                        used by thousands of software engineers. I primarily work on API design,
-                        bug fixing, and building testing pipelines. I've also interacted with customers
-                        to help them understand and troubleshoot the company's products.
+                        used by thousands of software engineers, as well as internal testing and benchmarking tools. 
+                        I primarily work with C#, C++, Python, Azure, and Avalonia UI. I've also interacted with customers
+                        to gather and implement product feedback and conducted market research to guide plans for product development.
                     </Card.Text>
                     <Card.Text>
                         <b>Technologies/Languages:</b>
