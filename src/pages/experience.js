@@ -20,7 +20,7 @@ const Experience = () => {
                     <Card.Text>
                         <b>Technologies/Languages:</b>
                             <br/>
-                            C#, C++, Python, Avalonia UI, Azure
+                            C#, C++, Python, Avalonia UI, Azure, Docker, Linux
                     </Card.Text>
                     <Card.Text>
                         <b><i>June 2023 - Present</i></b>
